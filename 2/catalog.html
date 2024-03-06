@@ -3,19 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2411689-device-1/2/">
 </head>
   <body>
     <header class="page-header">
-      <a href="index.html"><img src="#" alt="логотип"></a>
+      <a class='header-link-logo' href="index.html"><img src="#" alt="логотип" width="145" height="36"></a>
       <nav class="navigation">
-        <form action="https://echo.htmlacademy.ru/">
-          <label class="visually-hidden">Найти
-          <input type="text">
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
+          <label class="visually-hidden" for="search-field" >Найти
+          <input id="search-field" type="text">
         </label>
-          <button type="submit">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-list">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-link" href="#" >
+              <img class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="12">
+              Коля Петухов
+            </a>
+          </li>
           <li class="navigation-item">
             <a href="#">Войти</a>
           </li>
@@ -23,8 +30,68 @@
             <a class="navigation-link" href="#" >Сравнить</a></li>
           <li class="navigation-item">
             <a class="navigation-link" href="#" >Корзина</a>
+            <div class="popover-cart popover">
+              <div class="popover-content">
+                <ul class="cart-list">
+                  <li class="cart-list-item">
+                    <a class="cart-list-link" href="blank.html">
+                      <img class="cart-list-image" src="images/catalog/noob-stick.png" alt="Любительский монопод." width="39" height="43">
+                      <div class="cart-list-title">Любительская <br>селфи-палка</div>
+                    </a>
+                    <button class="delete-button button">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </li>
+                  <li class="cart-list-item">
+                    <a class="cart-list-link" href="blank.html">
+                      <img class="cart-list-image" src="images/catalog/pro-stick.png" alt="Профессиональная селфи-палка." width="39" height="43">
+                      <div class="cart-list-title">Профессиональная селфи-палка</div>
+                    </a>
+                    <button class="delete-button button">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-total">
+                  <div class="total-amount">Товаров: <span class="total-amount-number">2</span></div>
+                  <div class="total-sum">Сумма: <span class="total-sum-number">2000</span> ₽</div>
+                </div>
+                <button class="cart-button button">Открыть корзину</button>
+              </div>
+            </div>
         </li>
       </ul>
+      <div class="popover-catalog-button">
+        <button class="navigation-catalog-button button" type="button">
+          Каталог товаров
+          <img class="catalog-icon" aria-hidden="true" focusable="false" width="50" height="50"></img>
+        </button>
+        <div class="popover popover-catalog">
+          <div class="popover-catalog-contents">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <ul class="popover-catalog-list">
+              <li class="popover-catalog-item">
+                <a class="popover-catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="popover-catalog-item">
+                <a class="popover-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+              </li>
+              <li class="popover-catalog-item">
+                <a class="popover-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="popover-catalog-item">
+                <a class="popover-catalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="popover-catalog-item">
+                <a class="popover-catalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="popover-catalog-item">
+                <a class="popover-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
         <ul class="navigation-main">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html" >Каталог товаров</a>
@@ -75,27 +142,32 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Черный">Черный
+                  <input class="control-input" type="checkbox" name="Черный">
+                  Черный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Белый">Белый
+                  <input class="control-input" type="checkbox" name="Белый">
+                  Белый
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Синий">Синий
+                  <input class="control-input" type="checkbox" name="Синий">
+                  Синий
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Красный">Красный
+                  <input class="control-input" type="checkbox" name="Красный">
+                  Красный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Розовый">Розовый
+                  <input class="control-input" type="checkbox" name="Розовый">
+                  Розовый
                 </label>
               </li>
             </ul>
@@ -120,7 +192,7 @@
             </li>
           </ul>
           </fieldset>
-          <button type="submit" name="Показать">Показать</button>
+          <button class="button-yellow" type="submit" name="Показать">Показать</button>
         </form>
         </section>
 

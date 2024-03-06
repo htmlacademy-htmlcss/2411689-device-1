@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2411689-device-1/2/">
 </head>
   <body>
     <header class="page-header">
-      <a href="index.html"><img src="images/logo-header.png" alt="логотип" width="145" height="36"></a>
+      <a href="index.html"><img src="images/logo-header.svg" alt="логотип" width="145" height="36"></a>
       <nav class="navigation">
-        <form action="https://echo.htmlacademy.ru/">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="text">
-          <button type="submit">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -43,9 +44,10 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       <section class="slide">
+        <div>
         <section class="slide slide-current">
           <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
-          <img class="slide-image" src="images/slider-1-min.png" alt="квадрокоптер">
+          <img class="slide-image" src="images/slider-1.png" alt="квадрокоптер">
           <p class="slide-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.
@@ -53,19 +55,20 @@
           <a class="link-more" href="#">Подробнее</a>
 
           <table class="characteristics-table">
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
+            <tr class="characteristics-item">
+              <td class="characteristics-term">800 м</td>
+              <td class="characteristics-term">50 м</td>
             </tr>
-            <tr>
-              <th>Дальность полета</th>
-              <th>Радиус поражения</th>
+            <tr class="characteristics-item">
+              <th class="characteristics-description">Дальность полета</th>
+              <th class="characteristics-description">Радиус поражения</th>
             </tr>
           </table>
         </section>
+      </div>
         <section class="slide">
           <h2 class="slide-title">Худеем правильно!</h2>
-          <img class="slide-image" src="images/slider-2-min.png" alt="фитнес-браслет">
+          <img class="slide-image" src="images/slider-2.png" alt="фитнес-браслет">
           <p class="slide-description">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
             занятия и соблюдать диету.
@@ -74,16 +77,16 @@
 
           <table class="characteristics-table">
             <tr>
-              <td>48 часов</td>
+              <td class="characteristics-term">48 часов</td>
               </tr>
               <tr>
-              <th>Без подзарядки</th>
+              <th class="characteristics-description">Без подзарядки</th>
             </tr>
           </table>
         </section>
         <section class="slide">
           <h2 class="slide-title">Делай селфи, как Бен Стиллер!</h2>
-          <img class="slide-image" src="images/slider-3-min.png" alt="селфи-палка" />
+          <img class="slide-image" src="images/slider-3.png" alt="селфи-палка">
           <p class="slide-description">
             Самая длинная палка для селфи доступна в нашем магазине.
             Восемь(Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -92,14 +95,14 @@
 
           <table class="characteristics-table">
             <tr>
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
+              <td class="characteristics-term">8,5 м</td>
+              <td class="characteristics-term">5 кг</td>
+              <td class="characteristics-term">Карбон</td>
             </tr>
             <tr>
-              <th>Длина палки</th>
-              <th>Вес палки</th>
-              <th>Материал</th>
+              <th class="characteristics-description">Длина палки</th>
+              <th class="characteristics-description">Вес палки</th>
+              <th class="characteristics-description">Материал</th>
             </tr>
           </table>
         </section>
@@ -126,33 +129,27 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="product-list">
           <li class="product-type">
-            <a href="#">
-              <img class="category-image" src="images/vr.svg" width="160" height="160" alt="очки вр">
+            <a class="product-list-link" href="#">
               Виртуальная реальность</a>
           </li>
           <li class="product-type">
-            <a href="#">
-              <img class="category-image" src="images/monopod.svg" width="160" height="160" alt="монопод">
+            <a class="product-list-link" href="#">
               Моноподы для селфи </a>
           </li>
           <li class="product-type">
-            <a href="#">
-              <img class="category-image" src="images/action-camera.svg" width="160" height="160" alt="экшн-камера">
+            <a class="product-list-link" href="#">
               Экшн-камеры</a>
           </li>
           <li class="product-type">
-            <a href="#">
-              <img class="category-image" src="images/fitness-bracelet.svg" width="160" height="160" alt="фитнес-браслет">
+            <a class="product-list-link" href="#">
               Фитнес-браслеты</a>
           </li>
           <li class="product-type">
-            <a href="#">
-              <img class="category-image" src="images/smart-watch.svg" width="160" height="160" alt="умные часы">
+            <a class="product-list-link" href="#">
               Умные часы</a>
           </li>
           <li class="product-type">
-            <a href="#">
-              <img class="category-image" src="images/copter.svg" width="160" height="160" alt="квадрокоптер">
+            <a class="product-list-link" href="#">
               Квадрокоптеры</a>
           </li>
         </ul>
@@ -160,7 +157,6 @@
 
       <section class="services">
         <h3 class="services-header">Доставка</h3>
-        <img src="images/delivery.png" width="136" height="164" alt="доставка">
         <p class="services-description">
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
           совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
@@ -194,8 +190,9 @@
         </li>
       </ul>
       <section>
-      <img src="images/delivery-truck.svg" width="125" height="100" alt="доставка">
-      <a href="#">Доставим редкий товар под заказ</a>
+        <div>
+     <a href="#">Доставим редкий товар под заказ</a>
+    </div>
     </section>
 
       <section class="info">
@@ -213,7 +210,7 @@
         <a href="#" class="more-about"><span>Подробнее о нас</span></a>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-description">
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
@@ -258,18 +255,18 @@
     </main>
     <footer>
       <a class="logo" href="index.html">
-        <img src="images/logo-footer.png" alt="Логотип Девайса" width="145" height="36>
+        <img src="images/logo-footer.svg" alt="Логотип Девайса" width="145" height="36">
       </a>
-      <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+      <address> Санкт-Петербург, набережная реки Карповки, 5, литера П. </address>
       <ul class="footer-navigation-list">
         <li class="footer-navigation-item">
-          <a href="#">Доставка</a>
+          <a class="footer-navigation-link" href="#">Доставка</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Гарантия</a>
+          <a class="footer-navigation-link" href="#">Гарантия</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Контакты</a>
+          <a class="footer-navigation-link" href="#">Контакты</a>
         </li>
       </ul>
 
@@ -280,19 +277,19 @@
         <li class="social-media-item">
           <a class="social" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
-            <img src="images/telegram.svg" width="40" height="40" alt="телеграм">
+
           </a>
         </li>
         <li class="social-media-item">
           <a class="social" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
-            <img src="images/youtube.svg" width="40" height="40" alt="ютюб">
+
           </a>
         </li>
         <li class="social-media-item">
           <a class="social" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Twitter</span>
-            <img src="images/twitter.png" width="40" height="40" alt="твиттер">
+
           </a>
         </li>
       </ul>
