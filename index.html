@@ -9,8 +9,8 @@
     <header class="page-header">
       <a href="index.html"><img src="images/logo-header.svg" alt="логотип" width="145" height="36"></a>
       <nav class="navigation">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <input type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-list">
@@ -43,7 +43,7 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       <section class="slides">
-        <h2 class="visually-hidden">Слайды продуции</h2>
+        <h2 class="visually-hidden">Слайды продукции</h2>
         <section class="slide-item slide-current">
           <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
           <p class="slide-description">
@@ -187,10 +187,9 @@
           <button type="button">Кредит</button>
         </li>
       </ul>
-      <section>
-        <div>
-     <a href="#">Доставим редкий товар под заказ</a>
-    </div>
+      <section class="services">
+        <h3 class="visually-hidden">Предложение</h3>
+        <a href="#">Доставим редкий товар под заказ</a>
     </section>
 
       <section class="info">
@@ -239,7 +238,7 @@
         </p>
         <form
           class="subscribe-form"
-          method="get"
+          method="post"
           action="https://echo.htmlacademy.ru">
           <label class="visually-hidden">
             Ваш e-mail
@@ -267,7 +266,6 @@
           <a class="footer-navigation-link" href="#">Контакты</a>
         </li>
       </ul>
-
       <p class="phone-number">
         <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </p>
