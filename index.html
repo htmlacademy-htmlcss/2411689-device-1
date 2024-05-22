@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
+<!-- Шапка -->
     <header class="page-header">
+<!-- Лого -->
       <a href="index.html"><img src="images/logo-header.svg" alt="логотип" width="145" height="36"></a>
       <nav class="navigation">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -18,7 +21,7 @@
             <a href="#">Войти</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
+            <a class="navigation-item" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
@@ -41,10 +44,13 @@
       </nav>
     </header>
     <main>
+<!--Главный заголовок -->
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+<!-- Слайды продукции -->
       <section class="slides">
         <h2 class="visually-hidden">Слайды продукции</h2>
         <section class="slide-item slide-current">
+          <img class="slide-image" src="images/slider-1.png" alt="Черно-белый квадрокоптер, испускающий красный луч лазера из камеры" height="560" width="560">
           <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
           <p class="slide-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -123,6 +129,7 @@
         </ul>
       </section>
 
+<!-- Категории продукции -->
       <section>
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="product-list">
@@ -152,7 +159,7 @@
           </li>
         </ul>
       </section>
-
+<!-- Сервисы -->
       <section class="services">
         <h3 class="services-header">Доставка</h3>
         <p class="services-description">
@@ -181,17 +188,17 @@
           <button class="current" type="button">Доставка</button>
         </li>
         <li>
-          <button type="button">Гарантия</button>
+          <button class="services-button" type="button" class="services-button">Гарантия</button>
         </li>
         <li>
-          <button type="button">Кредит</button>
+          <button class="services-button" type="button">Кредит</button>
         </li>
       </ul>
-      <section class="services">
+      <section class="delivery-offer">
         <h3 class="visually-hidden">Предложение</h3>
-        <a href="#">Доставим редкий товар под заказ</a>
+        <a class="delivery-offer-text" href="#">Доставим редкий товар под заказ</a>
     </section>
-
+<!-- Информация -->
       <section class="info">
         <h2 class="about-info">О нас</h2>
         <p class="about-description">
@@ -206,6 +213,7 @@
         </ul>
         <a href="#" class="more-about"><span>Подробнее о нас</span></a>
       </section>
+<!-- Контакты -->
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-description">
@@ -230,6 +238,7 @@
         </dl>
         <a href="#" class="contact-form"> Напишите нам </a>
       </section>
+<!-- Подписка -->
       <section class="subscription">
         <h3 class="subscribe">Подпишитесь на рассылку</h3>
         <p class="subscription-about">
@@ -245,11 +254,12 @@
             <input type="text" required placeholder="Ваш e-mail">
           </label>
 
-          <button type="submit">Подписаться</button>
+          <button class="subscribe-button" type="submit">Подписаться</button>
           <p class="subscription-side">Это бесплатно</p>
         </form>
       </section>
     </main>
+    <!-- Футер -->
     <footer>
       <a class="logo" href="index.html">
         <img src="images/logo-footer.svg" alt="Логотип Девайса" width="145" height="36">
