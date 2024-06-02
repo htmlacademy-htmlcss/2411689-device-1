@@ -108,8 +108,11 @@ header {
     text-decoration: none;
     margin-bottom: 30px;
     margin-left: 60px;
-}
 
+}
+.navigation-item{
+    border: 1px solid red;
+}
 .navigation-main {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +131,9 @@ header {
 }
 
 .navigation-list {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
     font-size: 18px;
@@ -135,24 +141,21 @@ header {
     text-decoration: none;
     text-align: center;
     text-transform: capitalize;
-    margin: 0;
     padding: 0;
-    flex-grow: 1;
     align-content: center;
+
 }
 
 .navigation-item {
     display: inline-block;
     text-decoration: none;
+    padding-left:50px;
 }
 
-.navigation-login {
+.compare,
+.navigation-basket{
+    margin-left: auto;
 
-    width: 231px;
-}
-
-.compare {
-    padding-left: 22px;
 }
 
 .navigation-basket {
@@ -172,6 +175,7 @@ header {
     border: 2px solid black;
     background-color: transparent;
     margin-right: 0;
+    flex-shrink: 0;
 }
 
 .search-form-input {
