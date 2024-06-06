@@ -110,9 +110,7 @@ header {
     margin-left: 60px;
 
 }
-.navigation-item{
-    border: 1px solid red;
-}
+
 .navigation-main {
     display: flex;
     flex-wrap: wrap;
@@ -149,14 +147,10 @@ header {
 .navigation-item {
     display: inline-block;
     text-decoration: none;
-    padding-left:50px;
+    margin-right: auto;
 }
 
-.compare,
-.navigation-basket{
-    margin-left: auto;
 
-}
 
 .navigation-basket {
     position: relative;
