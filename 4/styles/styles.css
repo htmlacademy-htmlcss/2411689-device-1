@@ -39,10 +39,17 @@ body {
     color: #444444;
 }
 
-.main container {
+.main-container-catalog {
+    display: flex;
     flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
+.main-container {
+    flex-grow: 1;
+}
 h1 {
     color: #000000;
 }
@@ -299,7 +306,9 @@ a {
     font-size: 36px;
     font-weight: 400;
 }
-
+.hidden-slide{
+ visibility:hidden;
+}
 .product-list {
     margin: 0;
     padding: 0;
@@ -335,6 +344,8 @@ a {
 
 .services {
     background-color: #F0F0F0;
+    display: flex;
+
 }
 
 .services-header {
@@ -344,6 +355,12 @@ a {
     font-weight: 800;
 }
 
+.delivery-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .about-info {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -397,7 +414,10 @@ a {
     line-height: 20px;
     color: #000000;
 }
-
+.abouts{
+    display: flex;
+    flex-direction: row;
+}
 .more-about {
     text-transform: uppercase;
     font-weight: 800;
@@ -428,6 +448,8 @@ a {
 footer {
     background-color: #444444;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
 }
 
 footer a {
