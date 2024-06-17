@@ -13,8 +13,9 @@
       <a class="header-link-logo" href="index.html"><img src="images/logo-header.svg" alt="логотип" width="145"
           height="36" /></a>
       <nav class="navigation">
+        <div class="nav-top-menu">
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
-          <input type="text" placeholder="Текст поиска">
+          <input class="search-form-input" type="text" placeholder="Текст поиска">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-list">
@@ -32,6 +33,9 @@
 <!-- Поповер корзина -->
           <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
+          </li>
+        </ul>
+          </div>
             <div class="popover-cart popover">
               <div class="popover-content">
                 <ul class="cart-list">
@@ -72,8 +76,7 @@
                 <button class=" cart-list cart-button button">Открыть корзину</button>
               </div>
             </div>
-          </li>
-        </ul>
+
         <div class="popover-catalog-button">
           <button class="navigation-catalog-button button" type="button">
             Каталог товаров оставить
@@ -114,11 +117,12 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-container">
+      <div class="page-container">
 <!-- Главный заголовок -->
       <h1 class="header-description">Моноподы для селфи</h1>
 <!-- Хлебные крошки -->
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs page-container">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
@@ -129,6 +133,9 @@
           <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
+
+      <div class="main-container-catalog">
+        <div class="page-container">
 <!-- Меню фильтров -->
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
@@ -251,10 +258,12 @@
             </a>
           </li>
         </ul>
-        <button class="button">Загрузить еще</button>
+        <button class="button-more page-container">Загрузить еще</button>
       </section>
+    </div>
+    </div>
 <!-- Пагинация -->
-      <ul class="pagination">
+      <ul class="pagination page-container">
         <li class="pagination-item">
           <a class="pagination-link pagination-prev pagination-disabled">
             <span>Назад</span>
@@ -281,9 +290,11 @@
           </a>
         </li>
       </ul>
+    </div>
     </main>
 <!-- Футер -->
     <footer>
+      <div class="page-container">
       <a class="logo" href="index.html">
         <img src="images/logo-footer.svg" width="145" height="36" alt="Логотип Девайса" />
       </a>
@@ -321,6 +332,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </footer>
   </body>
 
